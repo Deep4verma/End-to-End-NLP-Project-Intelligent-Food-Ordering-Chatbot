@@ -1,0 +1,26 @@
+name: Unzip NLP_Chatbot
+
+on:
+  workflow_dispatch: # allows you to run manually from Actions tab
+
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Unzip NLP_Chatbot.zip
+        run: |
+          unzip NLP_Chatbot.zip -d extracted
+          rm NLP_Chatbot.zip
+          mv extracted/* .
+          rm -rf extracted
+
+      - name: Commit and push unzipped files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git commit -m "Unzipped NLP_Chatbot.zip"
+          git push
