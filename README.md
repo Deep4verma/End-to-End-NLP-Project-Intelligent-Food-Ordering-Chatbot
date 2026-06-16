@@ -1,11 +1,11 @@
-## AI Food Ordering Chatbot
-#Project Overview
+# AI Food Ordering Chatbot
+## Project Overview
 
 Developed an intelligent food ordering chatbot that enables customers to place, modify, and track restaurant orders through natural language conversations. The system integrates Dialogflow for intent recognition, FastAPI for backend services, and MySQL for order management and tracking.
 
 The chatbot streamlines the ordering process by understanding customer requests, maintaining conversation context, processing orders, and providing real-time order status updates.
 
-#Objective
+# Objective
 
 Build an end-to-end conversational AI solution that:
 
@@ -22,7 +22,7 @@ MySQL
 Uvicorn
 Ngrok
 REST APIs
-#Project Architecture
+# Project Architecture
 ├── backend/
 │   ├── main.py
 │   ├── db_helper.py
@@ -37,7 +37,7 @@ REST APIs
 │
 └── db/
     └── MySQL Database Dump
-#Key Features
+# Key Features
 Order Management
 Add multiple food items to an order.
 Update existing orders dynamically.
@@ -108,7 +108,7 @@ get_total_order_price()
 API Endpoint
 POST /
 
-#Handles Dialogflow webhook requests for:
+# Handles Dialogflow webhook requests for:
 
 Food ordering
 Order modification
