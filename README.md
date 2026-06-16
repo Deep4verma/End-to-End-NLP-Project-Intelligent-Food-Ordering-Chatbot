@@ -1,4 +1,4 @@
-##AI Food Ordering Chatbot
+## AI Food Ordering Chatbot
 #Project Overview
 
 Developed an intelligent food ordering chatbot that enables customers to place, modify, and track restaurant orders through natural language conversations. The system integrates Dialogflow for intent recognition, FastAPI for backend services, and MySQL for order management and tracking.
