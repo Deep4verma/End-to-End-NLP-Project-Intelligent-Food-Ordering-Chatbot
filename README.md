@@ -23,20 +23,24 @@ Uvicorn
 Ngrok
 REST APIs
 ## Project Architecture
-├── backend/
-│   ├── main.py
-│   ├── db_helper.py
-│   ├── generic_helper.py
-│   └── requirements.txt
-│
-├── frontend/
-│   └── Website Interface
-│
-├── dialogflow_assets/
-│   └── Intents, Training Phrases & Entities
-│
-└── db/
-    └── MySQL Database Dump
+## Project Structure
+
+- **backend/**
+  - main.py
+  - db_helper.py
+  - generic_helper.py
+  - requirements.txt
+
+- **frontend/**
+  - Website Interface
+
+- **dialogflow_assets/**
+  - Intents
+  - Training Phrases
+  - Entities
+
+- **db/**
+  - MySQL Database Dump
 ## Key Features
 Order Management
 Add multiple food items to an order.
